@@ -1,0 +1,92 @@
+body{
+    display:flex;
+    flex:auto;
+    flex-direction: column;
+}
+
+/*header*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(49, 49, 71);
+    color:white;
+}
+    
+.header .top{
+    display:flex;
+    
+}
+
+.top .right ul{ /*make sure to descend into the exact tag why?*/
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+li{
+    list-style-type:none;
+}
+
+a{/*note that these 2 attr can only be in a tag not li or ul*/
+    color: aliceblue;
+    text-decoration: none;
+}
+.header .bottom{
+    display: flex;
+}
+.header .bottom .left{
+    display:flex;
+    flex-direction: column;
+    flex:1 1 0;
+}
+
+.header .bottom .right{
+    display:flex;
+    flex:1 1 0;
+}
+
+/*main content*/
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_content .bottom{
+    display: flex;
+    gap: 20px;
+}
+
+/* main_quote */
+
+.main_quote{
+    background-color: rgba(128, 128, 128, 0.178);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.quoter{
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+/* sign_up */
+.block{
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
